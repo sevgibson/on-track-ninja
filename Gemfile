@@ -8,6 +8,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 #gem 'jbuilder', '~> 2.0'
 gem 'active_model_serializers'
+#gem 'rocket_pants', '~> 1.0'
+gem 'will_paginate'
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
@@ -44,6 +46,9 @@ group :production do
   gem 'rails_12factor'
 end
 group :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'ffaker'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'launchy'
