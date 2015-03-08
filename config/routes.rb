@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   mount Upmin::Engine => '/admin'
   root to: 'visitors#index'
-  devise_for :users, controllers: { registrations: 'users/registrations' }
+  devise_for :users, controllers: {
+    registrations: 'users/registrations',
+    confirmations: 'device/confirmations',
+  }
   resources :users
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
