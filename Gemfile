@@ -37,7 +37,7 @@ group :development do
 end
 group :development, :test do
   gem 'factory_girl_rails'
-  gem 'faker'
+  gem 'ffaker'
   gem 'rspec-rails'
   gem 'sqlite3'
 end
@@ -46,9 +46,6 @@ group :production do
   gem 'rails_12factor'
 end
 group :test do
-  gem 'rspec-rails'
-  gem 'factory_girl_rails'
-  gem 'ffaker'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'launchy'
