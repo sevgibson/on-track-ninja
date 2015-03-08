@@ -1,11 +1,5 @@
 class Api::V1::UsersController < Api::V1::ApiController
 
-  class UserSerializer < ActiveModel::Serializer
-#    cache key: 'users', expires_in: 3.hours
-    attributes :id, :name, :created_at, :updated_at
-#    url :user
-  end
-
   #caches :index, :show, :cache_for => 5.minutes
 
   def index
