@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'visitors#index'
   devise_for :users, controllers: {
     registrations: 'users/registrations',
-    confirmations: 'device/confirmations',
+    confirmation: 'device/confirmations',
   }
   resources :users
   namespace :api, defaults: { format: :json } do
