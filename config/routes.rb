@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  mount SabisuRails::Engine => "/sabisu_rails"
   mount Upmin::Engine => '/admin'
   root to: 'visitors#index'
   devise_for :users, controllers: {
